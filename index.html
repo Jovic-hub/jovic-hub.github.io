@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Jovic</title>
+        <link rel = "stylesheet" href="style.css">
+    </head>
+    <body .container>
+        <br>
+        <div class = "color"> 
+        Pick a Colour
+        </div>
+        <div>
+            <br>
+                <button class = "colourButton button" onclick="blue()"> </button>
+                <button class = "colourButton button_two" onclick="red()"> </button>
+                <button class = "colourButton button_three" onclick="yellow()"> </button>
+                <button class = "colourButton button_four" onclick="green()"> </button>
+                <button class = "colourButton button_five" onclick="white()"> </button>
+        </div>       
+        <center>
+            <b class= "Jovic">Jovic </b><br><br>
+            <p> <b class= "paragraph"> I'm a 20 year old programming student based in Toronto, ON.<br>
+                Currently in love with Python and C.</b>
+            </p>
+            <a href="https://github.com/Jovic-hub" class ="text-link" target="_blank">
+                <img class="size" src = "Images/github.png" href>
+            </a>
+            <a href="https://www.linkedin.com/in/joaovictorf/" class ="text-link" target="_blank">
+                <img class="size"src = "Images/linkedin.png" href>
+            </a>
+        </center>
+
+            <div class="popup" id="popup-1">
+                <br><br><br><br><br>
+                <div class="overlay"></div>
+                <div class="content">
+                    <div class="close-btn" onclick="togglePopup()">&times;</div>
+                    <h1>About me</h1>
+                        <p> <b class = "about_text"> Hello! My name is João Victor Fernandes, I'm a brazilian that came to canada to study programming, and fell in love with solving problems using codes. </b></p>
+                        <p> <b class = "about_text"> My main goal, is to develop my skills and become a successful programmer in Canada. </b></p>
+                        <img style="width: 150px; border-radius:50%; border: 2px solid black;" src = "Images/jovic.jfif" > <p> Sorry, I only have this photo.</p>
+                        <p> <b class = "about_text"> Social Media: <br> </b></p>
+                        <a href="https://twitter.com/Joviczin" class ="text-link" target="_blank">
+                            <img class="popup_image" src = "Images/twitter.png">
+                        </a>
+                        <a href="https://www.facebook.com/joaovictor.fernandes.1840/" class ="text-link" target="_blank">
+                            <img class="popup_image" src = "Images/facebook.png">
+                        </a>
+                        <a href="https://www.instagram.com/jovic_" class ="text-link" target="_blank">
+                            <img class="popup_image" src = "Images/instagram.png">
+                    </a>
+                </div>
+                <b class = "about" onclick="togglePopup()">About</b>          
+            </div>    
+            
+            <div class="contact_button" id="popup-2">
+                <div class="overlay"></div>
+                <div class="content">
+                    <div class="close-btn" onclick="toggleContact()">&times;</div>
+                    <h1>Contact me</h1>
+                    <p> <b class = "about_text">Send me an Email and I will respond to it as soon as possible.</b></p>
+                    <a href="mailto: jovic258.fernandes@hotmail.com" class ="text-link" target="_blank">
+                        <img class="image_size" src = "Images/Email.png"></a>
+                    <p> <b class = "about_text">If you prefer, you can send me a message on linkedin too.</b></p>
+                    <a href="https://www.linkedin.com/in/joaovictorf/" class ="text-link" target="_blank">
+                        <img class="image_size" src = "Images/linkedin.png"></a>
+                </div>
+                <b class = "contact" onclick="toggleContact()">Contact</b>          
+            </div>       
+
+        <script type="text/javascript">
+            function blue(){
+                document.bgColor="#0091AD";
+            }
+            function red(){
+                document.bgColor="#bc575f";
+            }
+            function green(){
+                document.bgColor="#06d6a0";
+            }
+            function yellow(){
+                document.bgColor="#ffb703";
+            }
+            function white(){
+                document.bgColor="#ffffff";
+            }
+            function togglePopup(){
+                document.getElementById("popup-1").classList.toggle("active");
+            }
+            function toggleContact(){
+                document.getElementById("popup-2").classList.toggle("active");
+            }
+        </script>
+    </body>
+
+
+</html>
