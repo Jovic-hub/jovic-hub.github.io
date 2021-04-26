@@ -3,12 +3,12 @@
     width: 100%;
 }
 .Jovic{
-    color: #525252;
+    color: black;
     font-size: 750%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .color{
-    color: #525252;
+    color: black;
     position: relative;
     left: 76%;
     font-size: 195%;
@@ -16,12 +16,12 @@
     display: inline-block;
 }
 .paragraph{
-    color: #525252;
+    color: black;
     font-size: 150%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .about_text{
-    color: #525252;
+    color: black;
     font-size: 170%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -54,7 +54,7 @@
     left:80%;
 }
 .about{
-    color: #525252;
+    color: black;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     position: absolute;
     font-size: 350%;
@@ -63,7 +63,7 @@
     display: inline-block;
 }
 .contact{
-    color: #525252;
+    color: black;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     position: absolute;
     font-size: 350%;
