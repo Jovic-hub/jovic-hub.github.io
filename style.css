@@ -1,8 +1,9 @@
 .container{
-    float: left;
-    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 90px;
 }
-.Jovic{
+#Jovic{
     color: black;
     font-size: 750%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -70,6 +71,7 @@
     left: 60%;
     cursor: pointer;
     display: inline-block;
+    text-decoration: none;
 }
 body{
     transition: all 1.3s ease;
@@ -203,11 +205,72 @@ transform:translate(-50%,-50%) scale(1);
 }
       
 .popup_image{
-    width:6em;
-    height:6em;
-    margin:0 3%;
+    width:2em;
+    height:2em;
+    margin:0 0.5%;
 }
 
 .text-link{
     text-decoration: none;
 }
+
+.col-left {
+    border:5px solid #000000;
+    margin-left: 10%;
+    line-height: 170%;
+    color: black;
+    font-size: 150%;
+    height: 600px;
+    width: 1000px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.row1 {
+    display:flex;
+  }
+.col-right {
+    margin-right: 10%;
+    line-height: 170%;
+    color: black;
+    font-size: 170%;
+    height: 600px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  .photo{
+      height: 50%;
+      width: auto;
+  }
+  .images_about{
+    width:4em;
+    height:auto;
+    margin:0 0.5%;
+  }
+
+  .item{
+    display: flex;
+    height: 120px;
+    width: 900px;
+    border:3px solid #000000;
+    margin: 0 auto;
+  }
+  .item-photo{
+      height: 120px;
+      width: auto;
+      align-items: left;
+  }
+  .item-title{
+      margin-left: 2%;
+      margin-top: 0.5%;
+      font-size: 25px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  .item-description{
+    margin-top: 0.5%;
+    font-size: 17px;
+  }
+  .see-github{
+    margin-top: 0%;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+    
+  
