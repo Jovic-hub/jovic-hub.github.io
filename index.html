@@ -5,50 +5,172 @@
         <link id="favicon" rel="shortcut icon" href="Images/favicon.ico" />
         <title>Jovic</title>
         <link rel = "stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
+        <meta charset="utf-8">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     </head>
-    <body .container>
-        <br>
-        <div class = "color"> 
-        Pick a Colour
-        </div>
-        <div>
-            <br>
+    <body>   
+        <div class = "contain">
+            <nav class="navbar_two">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                  </ul>
+                </nav>
+            <section id = "home">
+                <br><br><br>
+                <center>
+                    <a id= "Jovic">Jovic </a><br><br>
+                        <b class= "paragraph"> I'm a 20 year old programming student based in Toronto, ON<br>
+                        Currently in love with C/C++, Rails and Node.js</b><br><br><br><br><br>
+                        <div class="container">
+                            <div class="row">
+                              <div class="col-sm">
+                                <a href="https://github.com/Jovic-hub" target="_blank">
+                                    <img class="img-fluid" src = "Images/github.png" width="320px">
+                                </a>
+                              </div>
+                              <div class="col-sm">
+                                <a href="https://www.linkedin.com/in/joaovictorf/" target="_blank">
+                                    <img class="img-fluid" src = "Images/linkedin.png" width="320px">
+                                </a>
+                              </div><br>
+                            </div>
+                          </div>
+                </center>
+            </section>
+            <section id = "about">
+                <br><br><br>
+                <center>
+                    <br><br>
+                    <div class="container">
+                        <div class="row">
+                          <div class="col-wd-auto" id = "about_image">
+                            <img src = "Images/about.png" width="300px">
+                            <p class = "paragraph" style="font-size: 25px;"> If you want to Hire me:</p>
+                            <a href="https://github.com/Jovic-hub" target="_blank"><img src = "Images/github.png" class = "images_about"></a>
+                            <a href="https://www.linkedin.com/in/joaovictorf/" target="_blank"><img src = "Images/linkedin.png" class = "images_about"></a>
+                            <a href="mailto: jovico.dev@gmail.com" target="_blank"><img src = "Images/Email.png" class = "images_about"></a>
+                            <p class = "paragraph" style="font-size: 25px;"> If you want to say "Hi" to me:</p>
+                            <a href="https://twitter.com/Joviczin" target="_blank"><img src = "Images/twitter.png" class = "images_about"></a>
+                            <a href="https://www.instagram.com/jovic_" target="_blank"><img src = "Images/instagram.png" class = "images_about"></a>
+                            <a href="https://www.facebook.com/joaovictor.fernandes.1840/" target="_blank"><img src = "Images/facebook.png" class = "images_about"></a>
+                          </div>
+                          <div class="col-sm">
+                            <p class = "paragraph" style="font-size: 40px;">
+                            Hello! My name is João Victor Fernandes. I'm a Brazilian who came to Canada to study 
+                            programming and fell in love with solving problems using code. My main goal is to develop my skills and become a successful programmer in Canada.
+                            </p>
+                          </div><br>
+                        </div><br><br><Br>
+                        <div class = "paragraph" style="font-size: 33px;">
+                            I started learning programming:
+                            <div id="time-elapsed"></div>
+                              Ago <br><br>
+                            </div>
+                        </div>
+                </center>
+            </section>
+            <section id = "portfolio">     
+                <br><br><br><br>
+                <div class="container">
+                    <div class="row">
+                      <div class="col-sm">
+                        <img class = "item-photo" src="Images/jovicdev.png">
+                        <div class = "portfolio-item">
+                            <h1 class = "item-title"> Jovic.Dev <p class = "see-github">
+                                <a href = "https://github.com/Jovic-hub/Jovic-hub.github.io" class = "text-link" style="text-decoration: none; color: black">
+                                    See on Github <img src="Images/github.png" style="height: 20px;">
+                                </a>
+                            </p></h1>
+                            <p class = "item-description">
+                                Learning Outcomes:<br> HTML + CSS, JavaScript.</p>
+                        </div>
+                      </div>
+                      <div class="col-sm">
+                          <div class = "portfolio-item">
+                            <img class = "item-photo" src = "Images/web.jpg">
+                            <h1 class = "item-title">College Web Projects<p class = "see-github">
+                                <a href = "https://github.com/Jovic-hub/Web-Projects" class = "text-link" style="text-decoration: none; color: black">
+                                    See on Github <img src="Images/github.png" style="height: 20px;">
+                                </a>
+                            </p></h1>
+                            <p class = "item-description">
+                                Learning Outcomes:<br> HTML + CSS, JavaScript.
+                            </p>
+                            </div>
+                      </div>
+                      <div class="col-sm">
+                        <div class = "portfolio-item">
+                            <img class = "item-photo" src = "Images/oriented.jpg">
+                            <h1 class = "item-title">Oriented Object Programming <p class = "see-github">
+                                <a href = "https://github.com/Jovic-hub/Oriented_Object_Projects" class = "text-link" style="text-decoration: none; color: black">
+                                    See on Github <img src="Images/github.png" style="height: 20px;">
+                                </a>
+                            </p></h1>
+                            <p class = "item-description">
+                                Learning Outcomes:<br> C++, Advanced Concepcts of OOP.</p>
+                            </div>
+                      </div>
+                    </div>
+                  </div><br><br>
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-sm">
+                        <img class = "item-photo" src = "Images/image_repository.png">
+                            <div class = "portfolio-item">
+                            <h1 class = "item-title"> Image Repository<p class = "see-github">
+                                <a href = "https://github.com/Jovic-hub/Shopify-Developer-Intern-Challenge" class = "text-link" style="text-decoration: none; color: black">
+                                    See on Github <img src="Images/github.png" style="height: 20px;">
+                                </a>
+                            </p></h1>
+                            <p class = "item-description">
+                                Learning Outcomes:<br> Ruby, Rails and Amazon S3.</p>
+                            </div>
+                      </div>
+                      <div class="col-sm">
+                        <img class = "item-photo" src = "Images/c.png">
+                                <div class = "portfolio-item">
+                                <h1 class = "item-title"> C Projects<p class = "see-github">
+                                    <a href = "https://github.com/Jovic-hub/Shopify-Developer-Intern-Challenge" class = "text-link" style="text-decoration: none; color: black">
+                                        See on Github <img src="Images/github.png" style="height: 20px;">
+                                    </a>
+                                </p></h1>
+                                <p class = "item-description">
+                                    Learning Outcomes:<br> C, Modular Programming.</p>
+                                </div>
+                      </div>
+                      <div class="col-sm">
+                        <div class = "portfolio-item">  
+                            <img class = "item-photo" src = "Images/cplus.png">
+                            <h1 class = "item-title"> Advanced Oriented Object Programming <p class = "see-github">
+                                <a class = "text-link" style="text-decoration: none; color: black">
+                                    Work in progress <img src="Images/github.png" style="height: 20px;">
+                                </a>
+                            </p></h1>
+                            <p class = "item-description">
+                                Learning Outcomes:<br> C++, Advanced Concepcts of OOP.</p>
+                            </div>
+                      </div>
+                    </div>
+                
+            </section>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+            <div class = "float"> 
                 <button class = "colourButton button" onclick="blue()"> </button>
                 <button class = "colourButton button_two" onclick="red()"> </button>
                 <button class = "colourButton button_three" onclick="yellow()"> </button>
                 <button class = "colourButton button_four" onclick="green()"> </button>
                 <button class = "colourButton button_five" onclick="white()"> </button>
-        </div>       
-        <center>
-            <a id= "Jovic" href = "index.html" target="_blank" class ="text-link" >Jovic </a><br><br>
-                <p> <b class= "paragraph"> I'm a 20 year old programming student based in Toronto, ON.<br>
-                Currently in love with Python and C.</b>
-            </p>
-            <a href="https://github.com/Jovic-hub" class ="text-link" target="_blank">
-                <img class="size" src = "Images/github.png" href>
-            </a>
-            <a href="https://www.linkedin.com/in/joaovictorf/" class ="text-link" target="_blank">
-                <img class="size"src = "Images/linkedin.png" href>
-            </a>
-        </center>
-
-            <div href="about.html" class="popup" id="popup-1">
-                <br><br><br><br><br>
-                <div class="overlay"></div>
-                <div class="content">
                 </div>
-                <b class = "about"><a class = "text-link" href="about.html" style="text-decoration: none; color: black">About</a></b>          
-            </div>    
-            
-            <div class="contact_button" id="popup-2">
-                <div class="overlay"></div>
-                <div class="content"></div>
-                <b class = "contact"><a class = "text-link" href="portfolio.html" style="text-decoration: none; color: black">Portfolio</a></b>          
-            </div>       
-
+        </div>
         <script src = "Site.js">
         </script>
     </body>
+    
 
 
 </html>

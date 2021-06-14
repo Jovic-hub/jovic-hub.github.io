@@ -1,21 +1,31 @@
 function blue(){
-    document.bgColor="#0091AD";
+    document.querySelector('section#home').style.background = '#4895ef';
+    document.querySelector('section#about').style.background = '#4361ee';
+    document.querySelector('section#portfolio').style.background = '#3f37c9';
     changeFavicon("Images/favicon2.ico")
 }
 function red(){
-    document.bgColor="#bc575f";
+    document.querySelector('section#home').style.background = '#e5383b';
+    document.querySelector('section#about').style.background = '#ba181b';
+    document.querySelector('section#portfolio').style.background = '#a4161a';
     changeFavicon("Images/favicon3.ico")
 }
 function green(){
-    document.bgColor="#06d6a0";
+    document.querySelector('section#home').style.background = '#6ede8a';
+    document.querySelector('section#about').style.background = '#4ad66d';
+    document.querySelector('section#portfolio').style.background = '#25a244';
     changeFavicon("Images/favicon4.ico")
 }
 function yellow(){
-    document.bgColor="#ffb703";
+    document.querySelector('section#home').style.background = '#ffff0a';
+    document.querySelector('section#about').style.background = '#ffea00';
+    document.querySelector('section#portfolio').style.background = '#ffdd00';
     changeFavicon("Images/favicon5.ico")
 }
 function white(){
-    document.bgColor="#ffffff";
+    document.querySelector('section#home').style.background = 'white';
+    document.querySelector('section#about').style.background = 'white';
+    document.querySelector('section#portfolio').style.background = 'white';
     changeFavicon("Images/favicon.ico")
 }
 function togglePopup(){
@@ -53,18 +63,51 @@ function updateClock() {
     
     let year = Math.floor(diff/(12*30*24*60*60)); 
     diff = diff-(12*year*30*24*60*60);
+    if(year === 0){
+        year = ""
+    }else if(year <= 1){
+        year = year + " year, "
+    }
+    else{
+        year = year + " years, "
+    }
     let month = Math.floor(diff/(30*24*60*60)); 
     diff = diff-(30*month*24*60*60);
+    if(month <= 1){
+        month = month + " month, "
+    }else{
+        month = month + " months, "
+    }
     let days = Math.floor(diff/(24*60*60)); 
     diff = diff-(days*24*60*60);
+    if(days <= 1){
+        days = days + " day, "
+    }else{
+        days = days + " days, "
+    }
     let hours = Math.floor(diff/(60*60));
     diff = diff-(hours*60*60);
+    if(hours <= 1){
+        hours = hours + " hour, "
+    }else{
+        hours = hours + " hours, "
+    }
     let minutes = Math.floor(diff/(60));
     diff = diff-(minutes*60);
+    if(minutes <= 1){
+        minutes = minutes + " minute, "
+    }else{
+        minutes = minutes + " minutes, "
+    }
     let seconds = diff;
-    
+    if(seconds <= 1){
+        seconds = seconds + " second"
+    }else{
+        seconds = seconds + " seconds"
+    }
 
-    document.getElementById("time-elapsed").innerHTML = year+" year(s), " + month+" month(s), "+ days+" day(s), "+hours+" hour(s), "+minutes+" minute(s), "+seconds+" second(s)";
+    document.getElementById("time-elapsed").innerHTML = year + month + days + hours + minutes + seconds;
+
 }
 
 timer = setInterval(updateClock, 1000);
