@@ -8,7 +8,6 @@
   /* CSS Smooth Scroll */
   overflow-y: scroll; 
   scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
 }
 #Jovic{
     color: black;
@@ -138,14 +137,14 @@ body{
     margin: 0 auto;
   }
   .item-photo{
-      height: 190px;
+      height: 120px;
       width: auto;
       align-items: left;
       border:3px solid #000000;
       border-radius: 2%;
     }
   .item-title{
-      font-size: 22px;
+      font-size: 20px;
       color: black;
       font-weight: bolder;
       font-family: 'Inter', sans-serif;
