@@ -264,3 +264,18 @@ body{
   .navbar_two ul li a:hover {
     color: skyblue;
   }
+
+  .card-portfolio{
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: rgb(235, 235, 235);
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: .25rem;
+    margin: 8px 8px;
+  }
