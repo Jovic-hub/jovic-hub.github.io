@@ -24,8 +24,20 @@
 }
 .paragraph{
     color: black;
-    font-size: 180%;
+    font-size: 2rem;
     font-family: 'Inter', sans-serif;
+}
+
+@media only screen and (max-width: 600px) {
+  .paragraph {
+    font-size: 3rem;
+  }
+  .navbar_two ul li a {
+    font-size: 2rem;
+  }
+  .navbar_two{
+    height: 80px;
+  }
 }
 .about_text{
     color: black;
@@ -201,7 +213,6 @@ body{
     justify-content: center;
     text-align: center;
     width: 100%;
-    min-height: 100vh;   
     /* Scroll Snap */
     scroll-snap-align: center;
   }
@@ -259,6 +270,7 @@ body{
     text-decoration: none;
     text-transform: uppercase;
     color: #f4f4f4;
+    font-size: 2rem;
   }
   
   .navbar_two ul li a:hover {
@@ -278,4 +290,8 @@ body{
     border: 1px solid rgba(0, 0, 0, 0.5);
     border-radius: .25rem;
     margin: 8px 8px;
+  }
+  .img-fluid{
+    width: 300%;
+    display: flex; 
   }
